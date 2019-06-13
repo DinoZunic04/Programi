@@ -45,7 +45,12 @@ int main()
 		for(i=0;i<w;i++)
 		{
 			for(j=0;j<w;j++)
-				printf("%c",s[pro[i][j]]);
+			{
+				if(pro[i][j]>0)
+				printf("%c",rand()%255);//s[pro[i][j]]);
+				else
+				printf(" ");
+			}
 			printf("\n");
 		}
 	}
